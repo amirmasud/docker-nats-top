@@ -8,4 +8,5 @@ RUN apk update && apk add --no-cache wget unzip && cd /tmp && \
         unzip nats-top-linux_amd64.zip && \
         mv nats-top-linux_amd64/nats-top /usr/local/bin/nats-top
 
-ENTRYPOINT /usr/local/bin/nats-top
+ENTRYPOINT [ "/usr/local/bin/nats-top" ]
+CMD []
