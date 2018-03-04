@@ -5,6 +5,6 @@ ENV NATS_TOP_VERSION=v0.3.2
 RUN apk update && apk add --no-cache git && \
 		 go get github.com/nats-io/nats-top
 
-ENTRYPOINT [ "nats-top" ]
+ENTRYPOINT [ "nats-top", "-s", "0.0.0.0"]
 
 CMD []
