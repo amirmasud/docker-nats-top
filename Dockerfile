@@ -1,6 +1,6 @@
-FROM alpine:3.4
+FROM alpine:3.7
 
-ENV NATS_TOP_VERSION=v0.2.0
+ENV NATS_TOP_VERSION=v0.3.2
 
 # Forgive me for the --no-check-certificate
 RUN apk update && apk add --no-cache wget unzip && cd /tmp && \
